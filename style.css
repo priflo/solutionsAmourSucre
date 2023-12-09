@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 38, 69, 0.10)
+}
+
+* {
+    font-family: 'Arvo', serif;
+}
+
+header {
+    background-image: url(images/banniere.webp);
+    background-size: 320px;
+    padding: 0.5rem;
+}
+
+.logo {
+    text-decoration: none;
+    color: #442013;
+}
+
+
+h1 {
+    font-family: 'Mountains of Christmas', serif;
+    color: white;
+    position: relative;
+    font-size: 2.07rem;
+    margin-top: -0.5rem;
+}
+
+.amour {
+    font-family: 'Mountains of Christmas', serif;
+    color: #FF2645;
+    position: absolute;
+    left: 0;
+    font-size: 2rem;
+}
+
+.sucre {
+    font-family: 'Mountains of Christmas', serif;
+    color: #442013;
+    position: absolute;
+    left: 5.3rem;
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    background-color: #FF2645;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    padding: 0.2rem;
+    margin: 0.1rem;
+}
+
+/* SOLUTIONS */
+.categorie {
+    background-size: cover;
+    padding: 2rem;
+    border: 2px #442013 solid;
+    text-align: center;
+    text-decoration: bold;
+    font-size: 1.5rem;
+}
+
+.episode {
+    margin-left: 1rem;
+    background-color: #2F2C90;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.caseBleue {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.presentation div {
+    text-align: center;
+    padding: 1rem;
+    border: 2px #442013 solid;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 426px) {
+    /* ACCUEIL */
+    .presentation div {
+        margin: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 427px) and (max-width: 769px) {
+    /* ACCUEIL */
+    h1, .amour, .sucre {
+        margin: -1rem 1rem;
+    }
+    .amour {
+        top: 1rem;
+        left: -1rem;;
+    }
+    .sucre {
+        top: 1rem;
+        left: 4.2rem;
+    }
+    .presentation div {
+        margin: 0.5rem 3rem;
+    }
+
+    /* SOLUTIONS */
+    #sectionSolutions {
+        display: flex;
+    }
+    .categorie {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+        width: 165px;
+        height: 17rem;
+        margin: 0.2rem;
+    }
+    #casesBleues {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1439px) {
+    /* ACCUEIL */
+    .logo {
+        font-size: 1.5rem;
+    }
+    h1, .amour, .sucre {
+        font-size: 3rem;
+        margin: -2rem 1rem;
+    }
+    .amour {
+        top: 1.7rem;
+        left: -1rem;;
+    }
+    .sucre {
+        top: 1.7rem;
+        left: 6.8rem;
+    }
+    nav a {
+        font-size: 1.3rem;
+        padding: 0.5rem;
+    }
+    .presentation div {
+        margin: 1rem 5.5rem;
+        font-size: 1.4rem;
+    }
+
+    /* SOLUTIONS */
+    #sectionSolutions {
+        display: flex;
+    }
+    .categorie {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+        width: 200px;
+        height: 25rem;
+        margin: 0.2rem;
+        font-size: 2rem;
+    }
+    #casesBleues {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    /* ACCUEIL */
+    .logo {
+        font-size: 2rem;
+    }
+    h1, .amour, .sucre {
+        font-size: 5rem;
+        margin: -2rem 1rem;
+    }
+    .amour {
+        top: 1.7rem;
+        left: -1rem;;
+    }
+    .sucre {
+        top: 1.7rem;
+        left: 12rem;
+    }
+    nav a {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+    .presentation div {
+        margin: 3rem 7rem;
+        font-size: 2rem;
+    }
+    
+    /* SOLUTIONS */
+    #sectionSolutions {
+        display: flex;
+    }
+    .categorie {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+        width: 275px;
+        height: 39rem;
+        margin: 0.5rem;
+        font-size: 3rem;
+    }
+    #casesBleues {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        font-size: 1.9rem;
+        text-align: center;
+    }
+}
